@@ -1,0 +1,248 @@
+﻿<footer class="site-footer">
+
+    <div class="container footer-top py-5">
+        <div class="row g-5">
+
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-brand mb-3">
+                    <span class="footer-logo">🚗 RentACar</span>
+                </div>
+                <p class="footer-desc">
+                    Güvenilir hizmet anlayışımız ve müşteri memnuniyeti odaklı yaklaşımımızla kaliteli çözümler sunuyoruz.
+                </p>
+                <div class="footer-social mt-4">
+                    <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+                <h6 class="footer-heading">Hızlı Linkler</h6>
+                <ul class="footer-links">
+                    <li><a href="#">Ana Sayfa</a></li>
+                    <li><a href="#">Hakkımızda</a></li>
+                    <li><a href="#">Hizmetlerimiz</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Sık Sorulan Sorular</a></li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h6 class="footer-heading">Hizmetler</h6>
+                <ul class="footer-links">
+                    <li><a href="#">Araç Kiralama</a></li>
+                    <li><a href="#">Günlük Kiralama</a></li>
+                    <li><a href="#">Kurumsal Kiralama</a></li>
+                    <li><a href="#">Havalimanı Transferi</a></li>
+                    <li><a href="#">VIP Hizmetler</a></li>
+                    <li><a href="#">Destek Merkezi</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <h6 class="footer-heading">İletişim Bilgileri</h6>
+                <ul class="footer-contact">
+                    <li>
+                        <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                        <span>Atatürk Cad. No:42, Çukurova<br>Adana, Türkiye</span>
+                    </li>
+                    <li>
+                        <span class="contact-icon"><i class="fas fa-phone-alt"></i></span>
+                        <span>+90 322 000 00 00</span>
+                    </li>
+                    <li>
+                        <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                        <span>info@rentacar.com.tr</span>
+                    </li>
+                    <li>
+                        <span class="contact-icon"><i class="fas fa-clock"></i></span>
+                        <span>Pzt – Cmt: 08:00 – 20:00<br>Pazar: 10:00 – 18:00</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row align-items-center py-3">
+                <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                    <span class="footer-copy">© 2026 RentACar. Tüm Hakları Saklıdır.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="footer-policy-link">Gizlilik Politikası</a>
+                    <span class="footer-policy-sep">·</span>
+                    <a href="#" class="footer-policy-link">Kullanım Şartları</a>
+                    <span class="footer-policy-sep">·</span>
+                    <a href="#" class="footer-policy-link">Çerez Politikası</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+@section Styles {
+    <style>
+        /* ===== FOOTER ===== */
+        .site-footer {
+            background: #0d1117;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            font-size: 0.875rem;
+        }
+
+        /* Logo */
+        .footer-logo {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #fff;
+            letter-spacing: -0.5px;
+        }
+
+        /* Açıklama */
+        .footer-desc {
+            color: rgba(255,255,255,0.45);
+            line-height: 1.75;
+            font-size: 0.85rem;
+            margin-bottom: 0;
+        }
+
+        /* Sosyal ikonlar */
+        .footer-social {
+            display: flex;
+            gap: 0.6rem;
+        }
+
+        .social-link {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.08);
+            color: rgba(255,255,255,0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s, transform 0.2s, border-color 0.2s;
+        }
+
+            .social-link:hover {
+                background: #e63946;
+                border-color: #e63946;
+                color: #fff;
+                transform: translateY(-3px);
+            }
+
+        /* Sütun başlıkları */
+        .footer-heading {
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.75rem;
+            position: relative;
+        }
+
+            .footer-heading::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 28px;
+                height: 2px;
+                background: #e63946;
+                border-radius: 2px;
+            }
+
+        /* Hızlı linkler */
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.55rem;
+        }
+
+            .footer-links a {
+                color: rgba(255,255,255,0.45);
+                text-decoration: none;
+                transition: color 0.2s, padding-left 0.2s;
+                display: inline-block;
+            }
+
+                .footer-links a:hover {
+                    color: #fff;
+                    padding-left: 5px;
+                }
+
+        /* İletişim listesi */
+        .footer-contact {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+            .footer-contact li {
+                display: flex;
+                align-items: flex-start;
+                gap: 0.75rem;
+                color: rgba(255,255,255,0.45);
+                line-height: 1.65;
+            }
+
+        .contact-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 7px;
+            background: rgba(230, 57, 70, 0.12);
+            border: 1px solid rgba(230, 57, 70, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #e63946;
+            font-size: 0.75rem;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        /* Alt bar */
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.06);
+            background: rgba(0,0,0,0.2);
+        }
+
+        .footer-copy {
+            color: rgba(255,255,255,0.3);
+            font-size: 0.8rem;
+        }
+
+        .footer-policy-link {
+            color: rgba(255,255,255,0.35);
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: color 0.2s;
+        }
+
+            .footer-policy-link:hover {
+                color: #fff;
+            }
+
+        .footer-policy-sep {
+            color: rgba(255,255,255,0.15);
+            margin: 0 0.5rem;
+            font-size: 0.8rem;
+        }
+    </style>
+}
