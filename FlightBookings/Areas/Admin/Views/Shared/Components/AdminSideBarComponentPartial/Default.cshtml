@@ -1,0 +1,194 @@
+﻿<aside class="sidebar" id="sidebar">
+
+    <!-- Brand -->
+    <a href="#" class="sidebar-brand" onclick="return false;">
+        <div class="brand-icon">
+            <i class="bi bi-car-front-fill"></i>
+        </div>
+        <div class="brand-text">
+            <span class="brand-name">RentAdmin</span>
+            <span class="brand-sub">Araç Kiralama Yönetimi</span>
+        </div>
+    </a>
+
+    <!-- Nav -->
+    <nav class="sidebar-nav">
+
+        <!-- Ana Menü -->
+        <div class="nav-label">ANA MENÜ</div>
+
+        <div class="nav-item-wrap">
+            <a class="nav-link-item" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">
+                <i class="bi bi-grid-1x2-fill icon"></i>
+                <span class="label">Dashboard</span>
+            </a>
+        </div>
+
+        <!-- Araçlar -->
+        <div class="nav-item-wrap">
+            <div class="nav-link-item active" onclick="toggleSub(this,'car-sub')">
+                <i class="bi bi-car-front-fill icon"></i>
+                <span class="label">Araç Yönetimi</span>
+                <i class="bi bi-chevron-down chevron open ms-auto"></i>
+            </div>
+
+            <div class="sub-menu open" id="car-sub">
+                <a class="sub-menu-link"
+                   asp-area="Admin"
+                   asp-controller="Car"
+                   asp-action="Index">
+                    <i class="bi bi-dot"></i>
+                    Araç Listesi
+                </a>
+
+                <a class="sub-menu-link"
+                   asp-area="Admin"
+                   asp-controller="Brand"
+                   asp-action="Index">
+                    <i class="bi bi-dot"></i>
+                    Markalar
+                </a>
+
+                <a class="sub-menu-link"
+                   asp-area="Admin"
+                   asp-controller="Category"
+                   asp-action="Index">
+                    <i class="bi bi-dot"></i>
+                    Kategoriler
+                </a>
+            </div>
+        </div>
+
+        <!-- Operasyonlar -->
+        <div class="nav-label">OPERASYONLAR</div>
+
+        <div class="nav-item-wrap">
+            <a class="nav-link-item"
+               asp-area="Admin"
+               asp-controller="Customer"
+               asp-action="Index">
+                <i class="bi bi-people-fill icon"></i>
+                <span class="label">Müşteriler</span>
+            </a>
+        </div>
+
+        <div class="nav-item-wrap">
+            <a class="nav-link-item"
+               asp-area="Admin"
+               asp-controller="Reservation"
+               asp-action="Index">
+                <i class="bi bi-calendar-check-fill icon"></i>
+                <span class="label">Rezervasyonlar</span>
+            </a>
+        </div>
+
+        <div class="nav-item-wrap">
+            <a class="nav-link-item"
+               asp-area="Admin"
+               asp-controller="Comment"
+               asp-action="Index">
+                <i class="bi bi-chat-left-text-fill icon"></i>
+                <span class="label">Yorumlar</span>
+            </a>
+        </div>
+
+        <!-- İçerik Yönetimi -->
+        <div class="nav-label">İÇERİK YÖNETİMİ</div>
+
+        <div class="nav-item-wrap">
+            <a class="nav-link-item"
+               asp-area="Admin"
+               asp-controller="Blog"
+               asp-action="Index">
+                <i class="bi bi-file-earmark-text-fill icon"></i>
+                <span class="label">Bloglar</span>
+            </a>
+        </div>
+
+        <div class="nav-item-wrap">
+            <a class="nav-link-item"
+               asp-area="Admin"
+               asp-controller="Faq"
+               asp-action="Index">
+                <i class="bi bi-question-circle-fill icon"></i>
+                <span class="label">Sık Sorulan Sorular</span>
+            </a>
+        </div>
+
+        <div class="nav-item-wrap">
+            <a class="nav-link-item"
+               asp-area="Admin"
+               asp-controller="Contact"
+               asp-action="Index">
+                <i class="bi bi-envelope-fill icon"></i>
+                <span class="label">İletişim Mesajları</span>
+            </a>
+        </div>
+
+        <!-- Kurumsal -->
+        <div class="nav-label">KURUMSAL</div>
+
+        <div class="nav-item-wrap">
+            <a class="nav-link-item"
+               asp-area="Admin"
+               asp-controller="About"
+               asp-action="Index">
+                <i class="bi bi-building-fill icon"></i>
+                <span class="label">Hakkımızda</span>
+            </a>
+        </div>
+
+        <div class="nav-item-wrap">
+            <a class="nav-link-item"
+               asp-area="Admin"
+               asp-controller="Reference"
+               asp-action="Index">
+                <i class="bi bi-star-fill icon"></i>
+                <span class="label">Referanslar</span>
+            </a>
+        </div>
+
+        <!-- Sistem -->
+        <div class="nav-label">SİSTEM</div>
+
+        <div class="nav-item-wrap">
+            <a class="nav-link-item"
+               asp-area="Admin"
+               asp-controller="User"
+               asp-action="Index">
+                <i class="bi bi-person-gear icon"></i>
+                <span class="label">Kullanıcılar</span>
+            </a>
+        </div>
+
+        <div class="nav-item-wrap">
+            <a class="nav-link-item"
+               asp-area="Admin"
+               asp-controller="Role"
+               asp-action="Index">
+                <i class="bi bi-shield-lock-fill icon"></i>
+                <span class="label">Roller</span>
+            </a>
+        </div>
+
+        <div class="nav-item-wrap">
+            <a class="nav-link-item"
+               asp-area="Admin"
+               asp-controller="Settings"
+               asp-action="Index">
+                <i class="bi bi-gear-fill icon"></i>
+                <span class="label">Ayarlar</span>
+            </a>
+        </div>
+
+    </nav>
+
+    <!-- Sidebar footer -->
+    <div class="sidebar-footer">
+        <button class="sidebar-toggle-btn" onclick="toggleSidebar()">
+            <i class="bi bi-arrow-bar-left" id="toggle-icon" style="font-size:16px;"></i>
+            <span id="toggle-label">Küçült</span>
+        </button>
+    </div>
+
+</aside>

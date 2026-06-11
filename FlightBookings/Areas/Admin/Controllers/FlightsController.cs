@@ -14,11 +14,7 @@ namespace FlightBookings.Areas.Admin.Controllers
         {
             return View();
         }
-        [HttpPost]
-        public IActionResult CreateFlight()
-        {
-            return View();
-        }
+       
 
     }
 }
