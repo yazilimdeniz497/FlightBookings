@@ -1,0 +1,426 @@
+﻿{{!-- ===== FAQ BÖLÜMÜ - Razor View'a yapıştır ===== --}}
+
+<section class="faq-section py-5">
+    <div class="container">
+
+        {{!-- Bölüm Başlığı --}}
+        <div class="text-center mb-5">
+            <span class="faq-badge">SSS</span>
+            <h2 class="faq-main-title mt-2">Sık Sorulan Sorular</h2>
+            <p class="faq-subtitle">Uçuş rezervasyonları hakkında merak ettiğiniz soruların cevaplarını burada bulabilirsiniz.</p>
+        </div>
+
+        <div class="row g-4 align-items-start">
+
+            {{!-- Sol: Accordion --}}
+            <div class="col-lg-7">
+                <div class="accordion faq-accordion" id="faqAccordion">
+
+                    <div class="accordion-item faq-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button faq-btn collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq1">
+                                <span class="faq-icon">✈</span>
+                                Uçak bileti rezervasyonu nasıl yapabilirim?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-body">
+                                Ana sayfamızdaki arama formunu kullanarak kalkış noktanızı, varış noktanızı ve seyahat tarihinizi girin. Uygun uçuşları listeleyin, size en uygun olanı seçin ve ödeme adımlarını tamamlayarak rezervasyonunuzu oluşturun.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item faq-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button faq-btn collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq2">
+                                <span class="faq-icon">🔍</span>
+                                Rezervasyonumu nasıl görüntüleyebilirim?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-body">
+                                Hesabınıza giriş yaparak "Rezervasyonlarım" bölümünden tüm aktif ve geçmiş rezervasyonlarınızı görüntüleyebilirsiniz. Ayrıca rezervasyon onay e-postanızdaki bağlantıyı kullanarak doğrudan erişim sağlayabilirsiniz.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item faq-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button faq-btn collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq3">
+                                <span class="faq-icon">🔄</span>
+                                Biletimi iptal edebilir veya değiştirebilir miyim?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-body">
+                                Uçuş tarihinden en az 24 saat önce rezervasyonunuzu iptal edebilir veya tarih/saat değişikliği yapabilirsiniz. İptal ve değişiklik koşulları seçtiğiniz tarife tipine göre farklılık gösterebilir. Ayrıntılar için bilet koşullarınızı incelemenizi öneririz.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item faq-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button faq-btn collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq4">
+                                <span class="faq-icon">📱</span>
+                                Online check-in işlemi nasıl yapılır?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-body">
+                                Online check-in, uçuşunuzdan 24 saat öncesinden 1 saat öncesine kadar web sitemiz veya mobil uygulamamız üzerinden yapılabilir. Rezervasyon kodunuz ve pasaport bilgilerinizle giriş yaparak koltuğunuzu seçebilir ve biniş kartınızı indirebilirsiniz.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item faq-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button faq-btn collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq5">
+                                <span class="faq-icon">🧳</span>
+                                Bagaj hakkım ne kadar?
+                            </button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-body">
+                                Ekonomi sınıfında 20 kg, Business sınıfında 30 kg ücretsiz bagaj hakkınız bulunmaktadır. Kabin bagajı için maksimum 8 kg ve 55x40x23 cm boyut sınırı geçerlidir. Ek bagaj için rezervasyon sırasında veya check-in öncesinde ön satın alım yapabilirsiniz.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item faq-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button faq-btn collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq6">
+                                <span class="faq-icon">⏰</span>
+                                Uçuş saatinden ne kadar önce havalimanında olmalıyım?
+                            </button>
+                        </h2>
+                        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-body">
+                                Yurt içi uçuşlar için kalkıştan en az 1,5 saat, uluslararası uçuşlar için en az 3 saat önce havalimanında bulunmanızı öneririz. Check-in kontuarları uçuştan 45 dakika önce kapanmaktadır.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item faq-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button faq-btn collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq7">
+                                <span class="faq-icon">💳</span>
+                                Ödeme yöntemleri nelerdir?
+                            </button>
+                        </h2>
+                        <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-body">
+                                Visa, MasterCard ve American Express kredi/banka kartları ile ödeme yapabilirsiniz. Ayrıca havale/EFT ve dijital cüzdan seçenekleri de mevcuttur. Tüm ödemeler 256-bit SSL şifreleme ile güvence altındadır.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item faq-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button faq-btn collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq8">
+                                <span class="faq-icon">📧</span>
+                                Rezervasyon onayımı nereden görebilirim?
+                            </button>
+                        </h2>
+                        <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body faq-body">
+                                Rezervasyon tamamlandıktan sonra kayıtlı e-posta adresinize otomatik onay maili gönderilir. Aynı zamanda hesabınıza giriş yaparak "Rezervasyonlarım" sayfasından da detayları görüntüleyebilirsiniz.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            {{!-- Sağ: Görsel Alan --}}
+            <div class="col-lg-5 d-none d-lg-block">
+                <div class="faq-visual-card">
+                    <div class="faq-visual-inner">
+                        <div class="faq-plane-icon">✈</div>
+                        <h4 class="faq-visual-title">Yardıma mı ihtiyacınız var?</h4>
+                        <p class="faq-visual-text">7/24 müşteri destek hattımız ve canlı sohbet hizmetimizle her zaman yanınızdayız.</p>
+                        <div class="faq-stats">
+                            <div class="faq-stat">
+                                <span class="faq-stat-number">200+</span>
+                                <span class="faq-stat-label">Destinasyon</span>
+                            </div>
+                            <div class="faq-stat-divider"></div>
+                            <div class="faq-stat">
+                                <span class="faq-stat-number">7/24</span>
+                                <span class="faq-stat-label">Destek</span>
+                            </div>
+                            <div class="faq-stat-divider"></div>
+                            <div class="faq-stat">
+                                <span class="faq-stat-number">1M+</span>
+                                <span class="faq-stat-label">Yolcu</span>
+                            </div>
+                        </div>
+                        <a href="#" class="faq-contact-btn">Bize Ulaşın</a>
+                    </div>
+                    <div class="faq-cloud faq-cloud-1"></div>
+                    <div class="faq-cloud faq-cloud-2"></div>
+                    <div class="faq-cloud faq-cloud-3"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+@section Styles {
+    <style>
+        /* ===== FAQ Section ===== */
+        .faq-section {
+            background: linear-gradient(135deg, #0d1b2a 0%, #1a2e45 60%, #7A1C2E 100%);
+        }
+
+        .faq-badge {
+            background: rgba(245, 166, 35, 0.15);
+            color: #F5A623;
+            border: 1px solid rgba(245, 166, 35, 0.4);
+            padding: 0.3em 1em;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .faq-main-title {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .faq-subtitle {
+            color: rgba(255, 255, 255, 0.55);
+            font-size: 0.95rem;
+            max-width: 520px;
+            margin: 0 auto;
+        }
+
+        /* ===== Accordion ===== */
+        .faq-accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+            border-radius: 10px !important;
+            overflow: hidden;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+            .faq-item:hover {
+                border-color: rgba(245, 166, 35, 0.35) !important;
+                box-shadow: 0 4px 20px rgba(122, 28, 46, 0.3);
+            }
+
+        .faq-btn {
+            background: transparent !important;
+            color: rgba(255, 255, 255, 0.85) !important;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 1rem 1.25rem;
+            box-shadow: none !important;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            transition: color 0.2s;
+        }
+
+            .faq-btn:not(.collapsed) {
+                color: #F5A623 !important;
+                background: rgba(245, 166, 35, 0.06) !important;
+            }
+
+            .faq-btn::after {
+                filter: invert(1) brightness(0.7);
+                margin-left: auto;
+                flex-shrink: 0;
+            }
+
+            .faq-btn:not(.collapsed)::after {
+                filter: invert(75%) sepia(60%) saturate(600%) hue-rotate(0deg);
+            }
+
+        .faq-icon {
+            font-size: 1rem;
+            flex-shrink: 0;
+            width: 28px;
+            height: 28px;
+            background: rgba(245, 166, 35, 0.12);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            text-align: center;
+        }
+
+        .faq-body {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.875rem;
+            line-height: 1.7;
+            padding: 0.5rem 1.25rem 1.25rem 3.5rem;
+            background: rgba(0,0,0,0.15);
+            animation: fadeSlideIn 0.3s ease;
+        }
+
+        @@keyframes fadeSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-6px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===== Sağ Görsel Kart ===== */
+        .faq-visual-card {
+            background: linear-gradient(145deg, #7A1C2E, #4a0e1c);
+            border-radius: 16px;
+            padding: 2.5rem 2rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 12px 40px rgba(122, 28, 46, 0.5);
+            text-align: center;
+            min-height: 420px;
+            display: flex;
+            align-items: center;
+        }
+
+        .faq-visual-inner {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+        }
+
+        .faq-plane-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            animation: floatPlane 3s ease-in-out infinite;
+            display: block;
+        }
+
+        @@keyframes floatPlane {
+            0%, 100% {
+                transform: translateY(0) rotate(-5deg);
+            }
+
+            50% {
+                transform: translateY(-10px) rotate(5deg);
+            }
+        }
+
+        .faq-visual-title {
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.3rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .faq-visual-text {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.875rem;
+            line-height: 1.7;
+            margin-bottom: 1.75rem;
+        }
+
+        .faq-stats {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .faq-stat {
+            text-align: center;
+        }
+
+        .faq-stat-number {
+            display: block;
+            color: #F5A623;
+            font-size: 1.4rem;
+            font-weight: 800;
+        }
+
+        .faq-stat-label {
+            display: block;
+            color: rgba(255,255,255,0.5);
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .faq-stat-divider {
+            width: 1px;
+            height: 36px;
+            background: rgba(255,255,255,0.15);
+        }
+
+        .faq-contact-btn {
+            display: inline-block;
+            background: #F5A623;
+            color: #1a1a2e;
+            font-weight: 700;
+            font-size: 0.85rem;
+            padding: 0.65em 2em;
+            border-radius: 25px;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+            .faq-contact-btn:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 6px 20px rgba(245, 166, 35, 0.4);
+                color: #1a1a2e;
+            }
+
+        /* Bulut dekorasyonları */
+        .faq-cloud {
+            position: absolute;
+            background: rgba(255,255,255,0.04);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .faq-cloud-1 {
+            width: 180px;
+            height: 180px;
+            top: -60px;
+            right: -60px;
+        }
+
+        .faq-cloud-2 {
+            width: 120px;
+            height: 120px;
+            bottom: -40px;
+            left: -40px;
+        }
+
+        .faq-cloud-3 {
+            width: 80px;
+            height: 80px;
+            bottom: 60px;
+            right: 20px;
+            background: rgba(245,166,35,0.06);
+        }
+    </style>
+}
